@@ -1,0 +1,21 @@
+/*--Font Defination Style Sheet--*/
+/*--OCR A-----------------*/
+@font-face {
+   font-family: OCR A;
+   src: local(OCR A), url('../Fonts/OCRA.ttf') format('truetype');
+}
+/*--Harrington-----------------*/
+@font-face {
+   font-family: Harrington;
+   src: local(Harrington), url('../Fonts/Harngton.ttf') format('truetype');
+}
+/*--Consolas-----------------*/
+@font-face {
+   font-family: Consolas;
+   src: local(Consolas), url('../Fonts/Consolas.ttf') format('truetype');
+}
+/*--Segoe UI-----------------*/
+@font-face {
+   font-family: Segoe UI;
+   src: local(Segoe UI), url('../Fonts/SegoeUi.ttf') format('truetype');
+}

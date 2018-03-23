@@ -1,0 +1,373 @@
+﻿/*=================================Animation Properties===================================*/
+
+/*--FadeIn Properties--------------------*/
+@keyframes FadeIn { /* Default */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes FadeIn { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes FadeIn { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes FadeIn { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-ms-keyframes FadeIn { /* Microsoft Edge */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+/*---------------------------------------*/
+
+/*--FadeOut Properties-------------------*/
+@keyframes FadeOut { /* Default */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes FadeOut { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes FadeOut { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes FadeOut { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-ms-keyframes FadeOut { /* Microsoft Edge */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+/*---------------------------------------*/
+
+/*--SlideLeftToRight Properties----------*/
+@keyframes SlideLeftToRight { /* Default */
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+@-moz-keyframes SlideLeftToRight { /* Firefox */
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+@-webkit-keyframes SlideLeftToRight { /* Safari and Chrome */
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+@-o-keyframes SlideLeftToRight { /* Opera */
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+@-ms-keyframes SlideLeftToRight { /* Microsoft Edge */
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+/*---------------------------------------*/
+
+/*--SlideRightToLeft Properties----------*/
+@keyframes SlideRightToLeft { /* Default */
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+@-moz-keyframes SlideRightToLeft { /* Firefox */
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+@-webkit-keyframes SlideRightToLeft { /* Safari and Chrome */
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+@-o-keyframes SlideRightToLeft { /* Opera */
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+@-ms-keyframes SlideRightToLeft { /* Microsoft Edge */
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+/*---------------------------------------*/
+
+/*--SlideTopToBottom Properties----------*/
+@keyframes SlideTopToBottom { /* Default */
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+@-moz-keyframes SlideTopToBottom { /* Firefox */
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+@-webkit-keyframes SlideTopToBottom { /* Safari and Chrome */
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+@-o-keyframes SlideTopToBottom { /* Opera */
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+@-ms-keyframes SlideTopToBottom { /* Microsoft Edge */
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+/*---------------------------------------*/
+
+/*--SlideBottomToTop Properties----------*/
+@keyframes SlideBottomToTop { /* Default */
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+@-moz-keyframes SlideBottomToTop { /* Firefox */
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+@-webkit-keyframes SlideBottomToTop { /* Safari and Chrome */
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+@-o-keyframes SlideBottomToTop { /* Opera */
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+@-ms-keyframes SlideBottomToTop { /* Microsoft Edge */
+    from {
+        bottom: -50px;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+/*---------------------------------------*/
+
+/*=================================Animation Classes===================================*/
+
+/*SlideLeftToRight Classes------------*/
+.LeftToRightSlide {
+    animation: SlideLeftToRight 2000ms; /* Default */
+    -moz-animation: SlideLeftToRight 2000ms; /* Firefox */
+    -webkit-animation: SlideLeftToRight 2000ms; /* Safari and Chrome */
+    -o-animation: SlideLeftToRight 2000ms; /* Opera */
+    -ms-animation: SlideLeftToRight 2000ms; /* Microsoft Edge */
+
+    animation-timing-function: ease; /* Default */
+    -moz-animation-timing-function: ease; /* Firefox */
+    -webkit-animation-timing-function: ease; /* Safari and Chrome */
+    -o-animation-timing-function: ease; /* Opera */
+    -ms-animation-timing-function: ease; /* Microsoft Edge */
+
+    position: relative;
+}
+/*---------------------------------------*/
+
+/*SlideRightToLeft Classes------------*/
+.RightToLeftSlide {
+    animation: SlideRightToLeft 2000ms; /* Default */
+    -moz-animation: SlideRightToLeft 2000ms; /* Firefox */
+    -webkit-animation: SlideRightToLeft 2000ms; /* Safari and Chrome */
+    -o-animation: SlideRightToLeft 2000ms; /* Opera */
+    -ms-animation: SlideRightToLeft 2000ms; /* Microsoft Edge */
+
+    animation-timing-function: ease; /* Default */
+    -moz-animation-timing-function: ease; /* Firefox */
+    -webkit-animation-timing-function: ease; /* Safari and Chrome */
+    -o-animation-timing-function: ease; /* Opera */
+    -ms-animation-timing-function: ease; /* Microsoft Edge */
+
+    position: relative;
+}
+/*---------------------------------------*/
+
+/*SlideTopToBottom Classes------------*/
+.TopToBottomSlide {
+    animation: SlideTopToBottom 800ms; /* Default */
+    -moz-animation: SlideTopToBottom 800ms; /* Firefox */
+    -webkit-animation: SlideTopToBottom 800ms; /* Safari and Chrome */
+    -o-animation: SlideTopToBottom 800ms; /* Opera */
+    -ms-animation: SlideTopToBottom 800ms; /* Microsoft Edge */
+
+    animation-timing-function: ease; /* Default */
+    -moz-animation-timing-function: ease; /* Firefox */
+    -webkit-animation-timing-function: ease; /* Safari and Chrome */
+    -o-animation-timing-function: ease; /* Opera */
+    -ms-animation-timing-function: ease; /* Microsoft Edge */
+
+    position: relative;
+}
+/*---------------------------------------*/
+
+/*SlideBottomToTop Classes------------*/
+.BottomToTopSlide {
+    animation: SlideBottomToTop 800ms; /* Default */
+    -moz-animation: SlideBottomToTop 800ms; /* Firefox */
+    -webkit-animation: SlideBottomToTop 800ms; /* Safari and Chrome */
+    -o-animation: SlideBottomToTop 800ms; /* Opera */
+    -ms-animation: SlideBottomToTop 800ms; /* Microsoft Edge */
+
+    animation-timing-function: ease; /* Default */
+    -moz-animation-timing-function: ease; /* Firefox */
+    -webkit-animation-timing-function: ease; /* Safari and Chrome */
+    -o-animation-timing-function: ease; /* Opera */
+    -ms-animation-timing-function: ease; /* Microsoft Edge */
+
+    position: relative;
+}
+/*---------------------------------------*/
+
+/*FadeIn Classes----------------------*/
+.Fade-In {
+    animation: FadeIn 2000ms; /* Default */
+    -moz-animation: FadeIn 2000ms; /* Firefox */
+    -webkit-animation: FadeIn 2000ms; /* Safari and Chrome */
+    -o-animation: FadeIn 2000ms; /* Opera */
+    -ms-animation: FadeIn 2000ms; /* Microsoft Edge */
+}
+/*---------------------------------------*/
+
+/*FadeIn Classes----------------------*/
+.Fade-Out {
+    animation: FadeOut 2000ms; /* Default */
+    -moz-animation: FadeOut 2000ms; /* Firefox */
+    -webkit-animation: FadeOut 2000ms; /* Safari and Chrome */
+    -o-animation: FadeOut 2000ms; /* Opera */
+    -ms-animation: FadeOut 2000ms; /* Microsoft Edge */
+}
+/*---------------------------------------*/
