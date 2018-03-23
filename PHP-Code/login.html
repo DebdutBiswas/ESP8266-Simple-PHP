@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <title>IoT Server > Authentication</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <link rel="icon" href="Icons/LoginPage.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Icons/LoginPage.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="CSS/Fonts.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Effects.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Page.css">
+</head>
+
+<body>
+    <table class="Fade-In" width="100%" style="margin-top: 5%;">
+        <tr>
+            <td align="center" valign="middle">
+                <table width="420" height="300" style="border: 1px solid #cccccc; border-radius: 10px; padding: 0px;background: rgba(52, 73, 94, 0.50); box-shadow: 0 0 10px rgba(0, 0, 0, .8);" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center">
+                            <br />
+                            <a href=<?php  ?> style="border: none;"><img src="Images/BG-Logo.png" alt="CSE" /></a>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="bottom" height="175" colspan="2">
+<?php
+    session_start();
+
+    if(isset($_SESSION['user_id']))
+    {
+        header('Location: status.html',true,301);
+    }
+
+    else
+    {
+        echo '
+                            <form name="login" action="login.php" method="post">
+                                <table width="100">
+                                    <h5 class="TopToBottomSlide" style="color: #ffffff">Welcome to IoT Server</h5>
+                                    <div style="color: #ffffff; font-size: 12px">Please log in to access secure IoT gateway!</div>
+                                    <br />
+                                    <tr class="LeftToRightSlide">
+                                        <td>
+                                            <input id="user_name" style="width: 320px" name="user_name" type="text" placeholder="user id" />
+                                        </td>
+                                    </tr>
+                                    <tr class="RightToLeftSlide">
+                                        <td>
+                                            <input id="password" style="width: 320px" name="password" type="password" placeholder="password" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="SubmitBtn" type="submit" style="width: 128px">Log In!</button>
+                            </form>
+        ';
+        
+        echo '
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+
+                <br />
+                <div class="BottomToTopSlide" style="color: #ffffff; font-size: 12px">Powered by: Debdut</div>
+        ';
+
+        if(!isset($_GET['LoginAttempt']))
+        {
+            echo '<div style="color: #FF8080; font-size: 12px">You are not logged in!</div>';
+        }
+        else
+        {
+            if($_GET['LoginAttempt']="failed")
+            {
+                echo '<div style="color: #FF8080; font-size: 12px">Log in failed!</div>';
+            }
+        }
+
+        if(isset($_GET['LogoutAttempt']))
+        {
+            if($_GET['LogoutAttempt']="failed")
+            {
+                echo '<div style="color: #FF8080; font-size: 12px">You have to Log in first!</div>';
+            }
+        }
+    }
+?>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
